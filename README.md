@@ -6,23 +6,23 @@ To run docker:
 
 1. Open path of project in cmd
 
-2. docker build --tag <container-name> .<br />
+2. ```docker build --tag <container-name> . ```<br />
 !Important: Add . at the end of the line!
 
-3. docker images<br />
+3. ```docker images```<br />
 -> View your images
 
-4. docker run -d -p 5000:5000 <container-name><br />
+4. ```docker run -d -p 5000:5000 <container-name>```<br />
 -> After successfully build you can open localhost:5000 to use the website
 
-Extra: docker ps<br />
+Extra: ```docker ps```<br />
 -> Use for see all running docker images atm
 
-Extra: docker stop <container-id>
+Extra: ```docker stop <container-id>```
 
-Extra: docker rmi -f <container-id>
+Extra: ```docker rmi -f <container-id>```
 
-Extra: docker container prune<br />
+Extra: ```docker container prune```<br />
 -> Stop all unused resources, freeing up space
 
 
@@ -49,7 +49,6 @@ If you want to use the feature to upload images to Google Drive via website:
 
 --> If you have problems, maybe you forgot to edit the id for the folder in app.py. It's a variable below imports named id_folder (line 22). Right now thats mine, so you have to edit it. You'll find your folder id in your Google Drive.Just do a right click on the folder.
 
-!!!!!!!!!!!!!!!!!!
-If you do not want to use this feature, then you do not need to create the file. However, you must then make a change in the code app.py! In line 23 you have to set the bool False!
-Now no more images are uploaded, so the first function doesn't work anymore. The function to classify a picture now works correctly, but the photo is not uploaded anymore!
-!!!!!!!!!!!!!!!!!!
+<b>If you do not want to use this feature, then you do not need to create the file. However, you must then make a change in the code app.py! In line 23 you have to set the bool False!
+Now no more images are uploaded, so the first function doesn't work anymore. The function to classify a picture now works correctly, but the photo is not uploaded anymore!</b>
+
